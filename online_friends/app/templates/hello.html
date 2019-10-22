@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends online</title>
+    <style>
+        body {
+            background: url(http://zoozel.ru/gallery/images/960345_fon-dlya-saita-png.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-family: cursive;
+        }
+        .title {
+            color: #FFFAFA;
+            font-size: 24px;
+        }
+        .butt {
+            background: #4682B4;
+            color: white;
+            font-size: 18px;
+            font-family: cursive;
+        }
+        .link {
+            color: #4682B4;
+        }
+    </style>
+
+</head>
+    <body>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message[1] }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <form action="" method="post">
+            {{ form.csrf }}
+            <p class="title"> Welcome! <br> Enter id and you will see a list of online friends: </p>
+            <div class="title">
+                {{ form.id.label }} {{ form.id }}
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit" class="butt"/>
+            </div>
+        </form>
+        {% for friend in friends_list %}
+            <p> {{friend.first_name}} {{friend.last_name}} <br>
+                Ссылка в vk: <a class="link" href={{friend.url}}> {{friend.url}} </a> <br>
+            </p>
+        {% endfor %}
+    </body>
+</html>
