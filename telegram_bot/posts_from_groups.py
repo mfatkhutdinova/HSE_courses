@@ -1,6 +1,6 @@
 from helpers import get_object_from_file, save_object_to_file
 from datetime import datetime
-from VK_api import make_vk_request
+from vk_api import make_vk_request
 import time
 import os
 
