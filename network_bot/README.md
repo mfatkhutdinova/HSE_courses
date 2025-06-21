@@ -1,12 +1,11 @@
-# network_bot
+# Network Bot
+A bot that helps people to find new acquaintances. 
 
-### A bot that helps people find new acquaintances. 
-
-**The immediate task** is to create a bot that asks the user for the surname, name, age, position and whom he is looking for (just text).
+The immediate task is to create a bot that asks the user for the surname, name, age, position and whom he is looking for (just text).
 Save all the data in the SQLite. In the interests of the user are selected by other people.
 
 ### Usage:
-**Python 3.6 required!**
+**Python 3.6 is required:**
 ```shell
 # update dependences
 > pip install requirements.txt
