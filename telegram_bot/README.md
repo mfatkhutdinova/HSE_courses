@@ -1,6 +1,5 @@
-# Telegram_Bot
-
-##### In this project we use VK API, take out the necessary data and create a bot in the Telegram that these data will give. Go!
+# Telegram Bot
+In this project we use VK API, take out the necessary data and create a bot in the Telegram that these data will give. Go!
 
 First you need to obtain an API VK. To do this, we create an application. 
 After completion you will receive id_app (id_client) and access_token. About it can be found [here](http://tatet.net/p345-kak-poluchit-app-id-dlya-sotsialnoy-seti-vkontakte.html).
