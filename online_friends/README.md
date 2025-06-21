@@ -1,6 +1,5 @@
-# online_friends
-
-### A site that allows you to see a list of online friends from an arbitrary VKontakte user. The site will run on Heroku.
+# Online friends
+A site that allows you to see a list of online friends from an arbitrary VKontakte user. The site will run on Heroku.
 
 ## Api Vk
 First you need to get an API VK. To do this, we create an application. 
